@@ -1,5 +1,5 @@
-const CheckoutComplete = require("./CheckoutComplete")
-const CheckoutPage = require("./CheckoutPage")
+const CheckoutComplete = require("./CheckoutComplete");
+const CheckoutPage = require("./CheckoutPage");
 
 class CheckoutOverviewPage{
     finishOrder(){
@@ -8,7 +8,7 @@ class CheckoutOverviewPage{
     }
 
     verifyOrderSummary(product){
-        cy.contains(product).should('be.visible')
+        cy.contains(product).should('be.visible');
     }
     
 }

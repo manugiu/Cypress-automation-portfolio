@@ -1,6 +1,6 @@
 class CheckoutComplete{
     verifyThankYou(message){
-        cy.contains(message).should('be.visible')
+        cy.contains(message).should('be.visible');
     }
 }
 

@@ -1,11 +1,11 @@
 const LoginPage = require("./LoginPage");
-const CartPage = require("./CartPage")
+const CartPage = require("./CartPage");
 
 class InventoryPage{
 
     verifyPageLoaded(){
-        cy.url().should('eq', Cypress.config('baseUrl') + '/inventory.html')
-        return this
+        cy.url().should('eq', Cypress.config('baseUrl') + '/inventory.html');
+        return this;
     }
     addItem(productName){
         const productId = productName.toLowerCase().replace(/\s+/g, '-');
@@ -13,8 +13,8 @@ class InventoryPage{
     }
 
     goToCartPage(){
-        cy.get('[data-test="shopping-cart-link"]').click()
-        return new CartPage()
+        cy.get('[data-test="shopping-cart-link"]').click();
+        return new CartPage();
     }
 
     removeProduct(productName){
