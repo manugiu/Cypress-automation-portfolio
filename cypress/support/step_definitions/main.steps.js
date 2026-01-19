@@ -53,7 +53,7 @@ When ('I click continue', function() {
 })
 
 When ('I complete the order', function(){
-  this.checkoutComplete = this.checkoutOverviewPage.finishOrder();
+  this.checkoutOverviewPage.finishOrder();
 })
 
 When ('I fill the checkout form with first name {string} and last name {string}', function(name, lastname) {

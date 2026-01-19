@@ -1,10 +1,6 @@
-const CheckoutComplete = require("./CheckoutComplete");
-const CheckoutPage = require("./CheckoutPage");
-
 class CheckoutOverviewPage{
     finishOrder(){
         cy.get('[data-test="finish"]').click();
-        return new CheckoutComplete();
     }
 
     verifyOrderSummary(product){
