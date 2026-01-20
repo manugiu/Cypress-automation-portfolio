@@ -1,5 +1,7 @@
 # 🚀 Cypress E2E Automation Framework - SauceDemo
 
+[![Cypress E2E Tests](https://github.com/manugiu/Cypress-automation-portfolio/actions/workflows/cypress-tests.yml/badge.svg)](https://github.com/manugiu/Cypress-automation-portfolio/actions/workflows/cypress-tests.yml)
+
 A comprehensive end-to-end testing framework built with Cypress and Cucumber (BDD), demonstrating professional test automation practices using the Page Object Model design pattern.
 
 ## 📋 Table of Contents
