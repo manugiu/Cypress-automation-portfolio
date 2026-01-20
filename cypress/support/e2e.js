@@ -1,1 +1,2 @@
-import 'cypress-mochawesome-reporter/register'; import sqlServer from 'cypress-sql-server'; sqlServer.addTask(); import './commands'
+require('cypress-mochawesome-reporter/register');
+require('./commands');

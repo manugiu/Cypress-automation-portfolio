@@ -36,8 +36,8 @@ module.exports = defineConfig({
       
       return config;
     },
-    specPattern: 'cypress/e2e/**/*.feature',
-    supportFile: false, 
+    specPattern: 'cypress/e2e/**/**',
+    supportFile: 'cypress/support/e2e.js', 
     baseUrl: 'https://www.saucedemo.com'
   },
 });
