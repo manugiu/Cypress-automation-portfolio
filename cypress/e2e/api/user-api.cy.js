@@ -33,4 +33,30 @@ describe('User API Tests', () => {
       });
   });
 
+
+  it('GET - should return 404 for invalid endpoint', () => {
+    cy.request({
+        method: 'GET',
+        url: 'https://jsonplaceholder.typicode.com/posts/99999999', 
+        failOnStatusCode: false})
+        .then((response) => {
+            expect(response.status).to.eq(404);
+      });
+  });
+
+    it('POST - should handle invalid data gracefully', () => {
+        cy.request({
+            method: 'POST',
+            url: 'https://jsonplaceholder.typicode.com/posts/99999999', 
+            body: {
+
+            },
+            failOnStatusCode: false
+        })
+            .then((response) => {
+                cy.log('Status ' + response.status)
+                expect(response.status).to.eq(404);
+        });
+    });
+
 });
