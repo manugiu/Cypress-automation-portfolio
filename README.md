@@ -108,6 +108,20 @@ npx cypress run --browser chrome
 - **Multi-item Purchase** - Checkout with multiple products
 - **Form Validation** - Required field validations (First Name, Last Name, Postal Code)
 
+## 🔌 API Testing
+
+The framework includes API tests demonstrating backend testing capabilities:
+
+**API Test Coverage:**
+- **GET Requests** - Fetching and validating user data
+- **POST Requests** - Creating resources and validating responses
+- **Response Validation** - Status codes, data structure, and content verification
+
+**Location:** `cypress/e2e/api/user-api.cy.js`
+
+**Run API tests:**
+```bash
+
 ## ⭐ Key Features
 
 - ✨ **BDD Framework** with Cucumber for human-readable test scenarios
@@ -119,7 +133,7 @@ npx cypress run --browser chrome
 
 ## 📧 Contact
 
-**Your Name**  
+**Enzo Manuel Giuggiolini**  
 - LinkedIn: [https://www.linkedin.com/in/enzo-manuel-giuggiolini/]
 - Email: manuelgiuggiolini@gmail.com
 
