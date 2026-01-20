@@ -121,6 +121,8 @@ The framework includes API tests demonstrating backend testing capabilities:
 
 **Run API tests:**
 ```bash
+npx cypress run --spec "cypress/e2e/api/**/*.cy.js"
+```
 
 ## ⭐ Key Features
 
