@@ -26,6 +26,8 @@ A comprehensive end-to-end testing framework built with Cypress and Cucumber (BD
 ```
 cypress/
 ├── e2e/
+│   ├── api/                   # API test files
+│   │   └── user-api.cy.js
 │   └── features/              # Feature files (Gherkin scenarios)
 │       ├── login-success.feature
 │       ├── login-failure.feature
@@ -56,7 +58,7 @@ cypress/
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/manugiu/cCpress-automation-portfolio.git
+git clone https://github.com/manugiu/Cypress-automation-portfolio.git
 cd Cypress-automation-portfolio
 ```
 
@@ -108,18 +110,61 @@ npx cypress run --browser chrome
 - **Multi-item Purchase** - Checkout with multiple products
 - **Form Validation** - Required field validations (First Name, Last Name, Postal Code)
 
+## 🔌 API Testing
+
+The framework includes API tests demonstrating backend testing capabilities:
+
+**API Test Coverage:**
+- **GET Requests** - Fetching and validating user data
+- **POST Requests** - Creating resources and validating responses
+- **Response Validation** - Status codes, data structure, and content verification
+
+**Location:** `cypress/e2e/api/user-api.cy.js`
+
+**Run API tests:**
+```bash
+npx cypress run --spec "cypress/e2e/api/**/*.cy.js"
+```
+
 ## ⭐ Key Features
 
 - ✨ **BDD Framework** with Cucumber for human-readable test scenarios
 - 📄 **Page Object Model** for maintainable and reusable code
 - 🔄 **Data-Driven Testing** using fixtures for test data management
 - 🎯 **Positive & Negative Testing** covering success and error scenarios
-- 📊 **Organized Structure** separating concerns (features, steps, pages)
+- 🔌 **API Testing** with GET and POST request validation
+- 🤖 **CI/CD Integration** with GitHub Actions for automated testing
+- 📊 **HTML Test Reports** with Mochawesome for detailed results
+- 📂 **Organized Structure** separating concerns (features, steps, pages, API tests)
 - 🔧 **Professional Practices** following industry-standard patterns
+
+## 🔄 CI/CD Integration
+
+This project includes automated testing via **GitHub Actions**:
+
+- ✅ Tests run automatically on every push to `main` branch
+- ✅ Pull request validation
+- ✅ Test reports and artifacts generated
+- ✅ Screenshots/videos on failure
+
+**View workflow:** [GitHub Actions](.github/workflows/cypress-tests.yml)
+
+## 📊 Test Reports
+
+The framework generates **Mochawesome HTML reports** after each test run:
+
+**Generate reports:**
+```bash
+npx cypress run
+```
+
+**View reports:**
+- Reports are generated in: `cypress/reports/html/index.html`
+- Open in browser to see detailed test results with screenshots
 
 ## 📧 Contact
 
-**Your Name**  
+**Enzo Manuel Giuggiolini**  
 - LinkedIn: [https://www.linkedin.com/in/enzo-manuel-giuggiolini/]
 - Email: manuelgiuggiolini@gmail.com
 
